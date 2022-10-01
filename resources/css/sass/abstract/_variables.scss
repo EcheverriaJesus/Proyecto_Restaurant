@@ -1,0 +1,29 @@
+:root {
+    /* Font */
+    --font-stack: Helvetica, sans-serif;
+
+    /* Colors */
+    --primary-color: #85c1ef;
+    --secondary-color: #cd9494;
+    --accent-color: #fbfcfc;
+
+    /* Alert messages */
+    /* Background */
+    --bg-info-color: #cce5ff;
+    --bg-danger-color: #f8d7da;
+    --bg-success-color: #d4edda;
+    --bg-warning-color: #fff3cd;
+    --bg-dark-color: #d6d8d9;
+    /* Border */
+    --b-info-color: #b8daff;
+    --b-danger-color: #f5c6cb;
+    --b-success-color: #c3e6cb;
+    --b-warning-color: #ffeeba;
+    --b-dark-color: #c6c8ca;
+    /* Font */
+    --f-info-color: #004085;
+    --f-danger-color: #721c24;
+    --f-success-color: #155724;
+    --f-warning-color: #856404;
+    --f-dark-color: #1b1e21;
+}

@@ -1,0 +1,45 @@
+@mixin component-color($color) {
+    background-color: var(--bg-#{$color}-color);
+    border: var(--b-#{$color}-color) 1px solid;
+    color: var(--f-#{$color}-color);
+    display: flex;
+
+    justify-content: space-between;
+    /* margin: 1rem 0; */
+    padding: 0.75rem 1.25rem;
+    border-radius: 0.25rem;
+}
+
+.flash-component {
+    &--info {
+        @include component-color(info);
+    }
+    &--danger {
+        @include component-color(danger);
+    }
+    &--success {
+        @include component-color(success);
+    }
+    &--warning {
+        @include component-color(warning);
+    }
+    &--dark {
+        @include component-color(dark);
+    }
+
+    &__text {
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 1.5rem;
+    }
+
+    &__button {
+        cursor: pointer;
+        width: 20px;
+    }
+    &__icon {
+        fill: currentColor;
+        width: 16px;
+        height: 16px;
+    }
+}

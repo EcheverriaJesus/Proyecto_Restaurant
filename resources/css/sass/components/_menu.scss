@@ -1,0 +1,41 @@
+.CajaPrincipal {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 55px;
+    background-color: rgba(3, 2, 2, 0.8705882353);
+    padding-right: 30px;
+    box-shadow: 2px 2px 5px #fd0000;
+  }
+  
+  .nav-item {
+    display: inline-block;
+    margin-left: 50px;
+    font-size: 15px;
+  }
+  
+  .nav-link {
+    width: 110px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+  }
+  
+  .nav-link:hover {
+    border-bottom: 1px solid #ffffff;
+    color: yellow;
+  }
+  
+  .nav-link:focus {
+    color: rgb(172, 172, 2);
+  }
+  
+  .nombre {
+    color: #ffffff;
+    display: block;
+    padding-right: 510px;
+  }
+ 
+  .logo {
+    margin-right: 25px;
+    border-radius: 20px;
+  }
