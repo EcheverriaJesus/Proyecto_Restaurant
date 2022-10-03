@@ -1,0 +1,403 @@
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+:root {
+  /* Font */
+  --font-stack: Helvetica, sans-serif;
+  /* Colors */
+  --primary-color: #85c1ef;
+  --secondary-color: #cd9494;
+  --accent-color: #fbfcfc;
+  /* Alert messages */
+  /* Background */
+  --bg-info-color: #cce5ff;
+  --bg-danger-color: #f8d7da;
+  --bg-success-color: #d4edda;
+  --bg-warning-color: #fff3cd;
+  --bg-dark-color: #d6d8d9;
+  /* Border */
+  --b-info-color: #b8daff;
+  --b-danger-color: #f5c6cb;
+  --b-success-color: #c3e6cb;
+  --b-warning-color: #ffeeba;
+  --b-dark-color: #c6c8ca;
+  /* Font */
+  --f-info-color: #004085;
+  --f-danger-color: #721c24;
+  --f-success-color: #155724;
+  --f-warning-color: #856404;
+  --f-dark-color: #1b1e21;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin and padding */
+/* Inherit fonts for inputs and buttons */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+*::before,
+*::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: 44px;
+  color: var(--primary-color);
+}
+
+h2 {
+  font-size: 38px;
+  color: var(--primary-color);
+}
+
+body {
+  font: 100% var(--font-stack);
+  color: var(--primary-color);
+  background-color: var(--background-color);
+}
+
+.container {
+  max-width: 1024px;
+}
+
+footer {
+  width: 100%;
+  height: 40vh;
+  background-color: rgb(252, 252, 252);
+}
+footer .footer__cajauno {
+  display: flex;
+}
+footer .footer__cajauno .footer__cajauno__social {
+  display: inline;
+}
+footer .footer__cajauno .footer__cajauno__social .footer__cajauno__social__logo {
+  border-radius: 20px;
+  width: 40px;
+  height: 40px;
+}
+footer .footer__cajauno .footer__cajauno__social .footer__cajauno__social__iconos .footer__cajauno__social__iconos__estilo {
+  display: block;
+}
+
+header {
+  /*  background: url("../../../images/dog-white.jpg") top right no-repeat; */
+  background-blend-mode: multiply;
+  background-size: cover;
+  height: 100vh;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.Contenedorheader {
+  position: relative;
+  text-align: center;
+}
+.Contenedorheader .CINTE {
+  font-size: 40px;
+  position: absolute;
+  top: 50px;
+  left: 100px;
+  color: rgb(110, 0, 0);
+  text-align: justify;
+}
+.Contenedorheader .Descripcion {
+  font-size: 20px;
+  position: absolute;
+  top: 120px;
+  left: 100px;
+  color: rgb(58, 0, 0);
+  text-align: justify;
+}
+.Contenedorheader .Conocenos {
+  border: 1px solid white;
+  background-color: rgb(58, 0, 0);
+  color: white;
+  position: absolute;
+  top: 250px;
+  left: 300px;
+  width: 150px;
+  height: 35px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.Contenedorheader .Conocenos:hover {
+  border: 1px solid rgb(253, 253, 253);
+  background-color: rgba(104, 73, 73, 0.801);
+}
+.Contenedorheader .Conocenos:focus {
+  color: yellow;
+}
+.Contenedorheader .LogoPrincipal {
+  position: absolute;
+  top: 5px;
+  left: 800px;
+}
+
+.separacion {
+  width: 100%;
+  height: 15px;
+  background-color: #3d1515;
+  box-shadow: 2px 2px 5px #000000;
+}
+
+/* ESTILOS PARA EL MAIN */
+.CarrucelSection {
+  position: relative;
+  text-align: center;
+  display: flex;
+  width: 100%;
+  height: 90vh;
+}
+.CarrucelSection .fondocarrucel {
+  width: 100%;
+  height: 100%;
+}
+.CarrucelSection .textolugares {
+  font-size: 30px;
+  position: absolute;
+  top: 10px;
+  left: 100px;
+  color: rgb(255, 255, 255);
+  text-align: justify;
+}
+
+.cajamain {
+  padding-top: 3px;
+}
+
+/* ESTILOS PARA EL FOOTER */
+.icono {
+  fill: rgb(54, 0, 0);
+  cursor: pointer;
+}
+
+footer {
+  color: black;
+  align-items: baseline;
+  width: 100%;
+  height: 40vh;
+  background-color: rgb(255, 255, 255);
+}
+footer .cajauno {
+  padding-top: 30px;
+  align-items: center;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-around;
+}
+footer .cajauno .cajasocial {
+  background-color: #ffffff;
+  display: inline;
+}
+footer .cajauno .cajasocial .cajalogo {
+  border-radius: 20px;
+  width: 40px;
+  height: 40px;
+}
+footer .cajauno .cajasocial .cajadescripcion {
+  font-size: 15px;
+  background-color: rgb(255, 255, 255);
+  padding-top: 10px;
+}
+footer .cajauno .cajasocial .cajasocialiconos {
+  display: flex;
+  background-color: #ffffff;
+  padding-top: 10px;
+  flex-direction: row;
+  justify-content: space-around;
+}
+footer .cajauno .cajainformation {
+  background-color: #3d1515;
+}
+footer .cajauno .cajahelp {
+  background-color: red;
+}
+footer .cajauno .cajaourmenu {
+  background-color: aqua;
+}
+
+.flash-component--info {
+  background-color: var(--bg-info-color);
+  border: var(--b-info-color) 1px solid;
+  color: var(--f-info-color);
+  display: flex;
+  justify-content: space-between;
+  /* margin: 1rem 0; */
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.25rem;
+}
+.flash-component--danger {
+  background-color: var(--bg-danger-color);
+  border: var(--b-danger-color) 1px solid;
+  color: var(--f-danger-color);
+  display: flex;
+  justify-content: space-between;
+  /* margin: 1rem 0; */
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.25rem;
+}
+.flash-component--success {
+  background-color: var(--bg-success-color);
+  border: var(--b-success-color) 1px solid;
+  color: var(--f-success-color);
+  display: flex;
+  justify-content: space-between;
+  /* margin: 1rem 0; */
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.25rem;
+}
+.flash-component--warning {
+  background-color: var(--bg-warning-color);
+  border: var(--b-warning-color) 1px solid;
+  color: var(--f-warning-color);
+  display: flex;
+  justify-content: space-between;
+  /* margin: 1rem 0; */
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.25rem;
+}
+.flash-component--dark {
+  background-color: var(--bg-dark-color);
+  border: var(--b-dark-color) 1px solid;
+  color: var(--f-dark-color);
+  display: flex;
+  justify-content: space-between;
+  /* margin: 1rem 0; */
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.25rem;
+}
+.flash-component__text {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+.flash-component__button {
+  cursor: pointer;
+  width: 20px;
+}
+.flash-component__icon {
+  fill: currentColor;
+  width: 16px;
+  height: 16px;
+}
+
+.CajaPrincipal {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 55px;
+  background-color: rgb(255, 255, 255);
+  padding-right: 30px;
+  box-shadow: 2px 2px 5px #caafaf;
+}
+
+.nav-item {
+  display: inline-block;
+  margin-left: 50px;
+  font-size: 15px;
+}
+
+.nav-link {
+  width: 110px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.nav-link:hover {
+  border-bottom: 1px solid #000000;
+  color: rgb(255, 0, 0);
+}
+
+.nav-link:focus {
+  color: rgb(255, 0, 0);
+}
+
+.nombre {
+  color: #0a0a0a;
+  display: block;
+  padding-right: 510px;
+}
+
+.logo {
+  margin-right: 25px;
+  border-radius: 20px;
+}

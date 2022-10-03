@@ -3,9 +3,10 @@
     justify-content: flex-end;
     align-items: center;
     height: 55px;
-    background-color: rgba(3, 2, 2, 0.8705882353);
+    background-color: rgb(255, 255, 255);
     padding-right: 30px;
-    box-shadow: 2px 2px 5px #fd0000;
+    box-shadow: 2px 2px 5px #caafaf;
+   
   }
   
   .nav-item {
@@ -17,20 +18,20 @@
   .nav-link {
     width: 110px;
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
   }
   
   .nav-link:hover {
-    border-bottom: 1px solid #ffffff;
-    color: yellow;
+    border-bottom: 1px solid #000000;
+    color: rgb(255, 0, 0);
   }
   
   .nav-link:focus {
-    color: rgb(172, 172, 2);
+    color: rgb(255, 0, 0);
   }
   
   .nombre {
-    color: #ffffff;
+    color: #0a0a0a;
     display: block;
     padding-right: 510px;
   }
